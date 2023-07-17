@@ -30,7 +30,8 @@ function blurForm() {
   });
 }
 
-function handleSubmit() {
+function handleSubmit(event) {
+  event.preventDefault();
   blurForm();
   calculate();
 }
