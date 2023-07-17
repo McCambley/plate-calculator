@@ -1,3 +1,4 @@
+const calculatorForm = document.querySelector(".form");
 const barInputs = document.querySelectorAll("input[name='options']");
 const weightInput = document.getElementById("weight");
 const plate = document.querySelector(".plates");
@@ -11,6 +12,8 @@ barInputs.forEach((item) => {
 });
 
 weightInput?.addEventListener("input", calculate);
+
+calculatorForm.addEventListener("submit", calculate);
 
 function adjustBarWeight(event) {
   if (event.target.checked) {
