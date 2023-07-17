@@ -79,5 +79,42 @@ h1, h2, h3 {
     border: 1px solid #eee;
     margin-bottom: .5rem;
     background-color: #eeeeee20;
+    
+}
 
+.plates-visual {
+    display: flex; 
+    align-items: center;
+    min-height: 5rem;
+    padding: 2rem 1px;
+    overflow: scroll;
+}
+
+.plates-visual p {
+    border-radius: 4px;
+    margin: 0;
+    margin-right: .25rem;
+    outline: 1px solid #eee;
+    height: auto;
+    width: 4ch;
+    text-align: center;
+}
+
+.plate-6 {
+    line-height: 10rem;
+}
+.plate-5 {
+    line-height: 8rem;
+}
+.plate-4 {
+    line-height: 6rem;
+}
+.plate-3 {
+    line-height: 4rem;
+}
+.plate-2 {
+    line-height: 3rem;
+}
+.plate-1 {
+    line-height: 2rem;
 }
