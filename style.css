@@ -17,6 +17,12 @@ body {
   margin: 0 auto;
   flex-direction: column;
   padding: 2rem 1rem;
+  min-height: 100vh;
+  justify-content: start;
+}
+
+.content {
+  flex: 1;
 }
 
 h1,

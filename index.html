@@ -11,27 +11,29 @@
     <title>Plate Calculator</title>
   </head>
   <body>
-    <h1>Plate Calculator</h1>
-    <section class="form">
-      <form>
-        <h2>Bar Weight (lbs.)</h2>
-        <div class="weight-options">
-          <label for="weight-45"> 45<input type="radio" id="weight-45" name="options" value="45" checked /> </label>
-          <label for="weight-20"> 20<input type="radio" id="weight-20" name="options" value="20" /> </label>
-          <label for="weight-0"> 0<input type="radio" id="weight-0" name="options" value="0" /></label>
-        </div>
-        <h2>Target Weight (lbs.)</h2>
-        <div class="weight-input">
-          <input id="weight" type="number" placeholder="Insert weight" />
-        </div>
-        <!-- <button id="calculate-button">Calculate</button> -->
-      </form>
-    </section>
-    <section class="results">
-      <h2>Plate Combinations</h2>
-      <div class="plates"></div>
-      <div class="plates-visual"></div>
-    </section>
+    <div class="content">
+      <h1>Plate Calculator</h1>
+      <section class="form">
+        <form>
+          <h2>Bar Weight (lbs.)</h2>
+          <div class="weight-options">
+            <label for="weight-45"> 45<input type="radio" id="weight-45" name="options" value="45" checked /> </label>
+            <label for="weight-20"> 20<input type="radio" id="weight-20" name="options" value="20" /> </label>
+            <label for="weight-0"> 0<input type="radio" id="weight-0" name="options" value="0" /></label>
+          </div>
+          <h2>Target Weight (lbs.)</h2>
+          <div class="weight-input">
+            <input id="weight" type="number" placeholder="Insert weight" />
+          </div>
+          <!-- <button id="calculate-button">Calculate</button> -->
+        </form>
+      </section>
+      <section class="results">
+        <h2>Plate Combinations</h2>
+        <div class="plates"></div>
+        <div class="plates-visual"></div>
+      </section>
+    </div>
     <hr class="divider" />
     <p class="footer">
       <!-- Made with <span class="emoji">🏋️‍♀️</span>  -->
