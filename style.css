@@ -1,120 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    /* outline: 1px solid red; */
-    color: #eee;
-    background-color: #24282E;
-    font-family: 'Roboto Slab', 'serif';
-    box-sizing: border-box;
+  /* outline: 1px solid red; */
+  color: #eee;
+  background-color: #24282e;
+  font-family: "Roboto Slab", "serif";
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    /* width: 100vw; */
-    max-width: 360px;
-    margin: 0 auto;
-    flex-direction: column;
-    padding: 2rem 1rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* width: 100vw; */
+  max-width: 360px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 2rem 1rem;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 2rem;
+h1,
+h2,
+h3 {
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .weight-options {
-    display: flex;
-    justify-content: space-around;
-    /* width: 100%; */
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  /* width: 100%; */
+  margin-bottom: 2rem;
 }
 
-
 .weight-options label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* gap: 1rem; */
-    outline: 1px solid #eee;
-    padding: 1rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  outline: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .weight-input input {
-    border: none;
-    box-shadow: none;
-    text-align: center;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding:  1rem 1rem;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;;
-    width: 100%;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  width: 100%;
 }
 
 .form button {
-    text-align: center;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding:  .5rem .5rem;
-    font-size: 1.2rem;;
-    width: 100%;
-    cursor: pointer;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  width: 100%;
+  cursor: pointer;
 }
 
 .plates p {
-    margin: 0;
-    text-align: center;
-    border-radius: 8px;
-    padding:  .5rem .5rem;
-    width: 100%;
-    font-size: 1.2rem;;
-    border: 1px solid #eee;
-    margin-bottom: .5rem;
-    background-color: #eeeeee20;
-    
+  margin: 0;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  border: 1px solid #eee;
+  margin-bottom: 0.5rem;
+  background-color: #eeeeee20;
+}
+
+.plates p:last-of-type {
+  margin-bottom: 0;
 }
 
 .plates-visual {
-    display: flex; 
-    align-items: center;
-    min-height: 5rem;
-    padding: 2rem 1px;
-    overflow: scroll;
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+  padding: 2rem 1px;
+  overflow: scroll;
 }
 
 .plates-visual p {
-    border-radius: 4px;
-    margin: 0;
-    margin-right: .25rem;
-    outline: 1px solid #eee;
-    height: auto;
-    width: 4ch;
-    text-align: center;
+  border-radius: 4px;
+  margin: 0;
+  margin-right: 0.25rem;
+  outline: 1px solid #eee;
+  height: auto;
+  width: 4ch;
+  text-align: center;
 }
 
 .plate-6 {
-    line-height: 10rem;
+  line-height: 10rem;
 }
 .plate-5 {
-    line-height: 8rem;
+  line-height: 8rem;
 }
 .plate-4 {
-    line-height: 6rem;
+  line-height: 6rem;
 }
 .plate-3 {
-    line-height: 4rem;
+  line-height: 4rem;
 }
 .plate-2 {
-    line-height: 3rem;
+  line-height: 3rem;
 }
 .plate-1 {
-    line-height: 2rem;
+  line-height: 2rem;
+}
+
+.divider {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  margin-bottom: 2rem;
+  opacity: 0.3;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0.7;
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.footer-link {
+  margin-left: 0.25rem;
+}
+
+.emoji {
+  /* margin-left: 0.5rem; */
+  /* margin-right: 0.5rem; */
+  opacity: 0.7;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
