@@ -5,27 +5,44 @@
   color: #eee;
   background-color: #24282e;
   font-family: "Roboto Slab", "serif";
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* align-items: center; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   /* width: 100vw; */
   max-width: 360px;
   margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2rem 1rem;
   min-height: 100vh;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
 }
 
 .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
-h1,
+h1 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
 h2,
 h3 {
   text-align: center;
@@ -35,16 +52,28 @@ h3 {
 }
 
 .weight-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   /* width: 100%; */
   margin-bottom: 2rem;
 }
 
 .weight-options label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* gap: 1rem; */
   outline: 1px solid #eee;
@@ -56,6 +85,7 @@ h3 {
 
 .weight-input input {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   text-align: center;
   border: 1px solid #eee;
@@ -93,7 +123,11 @@ h3 {
 }
 
 .plates-visual {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 5rem;
   padding: 2rem 1px;
@@ -138,8 +172,14 @@ h3 {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   opacity: 0.7;
@@ -159,4 +199,41 @@ h3 {
   width: 100%;
   text-align: center;
   margin: 0;
+}
+
+.add-plate-button {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: none;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.bar-weight-select {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.current-plates {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.5rem;
 }

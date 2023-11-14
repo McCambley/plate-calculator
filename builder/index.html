@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYR4VTZCWM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZYR4VTZCWM");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
+    <link rel="manifest" href="../public/site.webmanifest" />
+    <title>Plate Calculator</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="builder-title">Builder</h1>
+      <a class="page-link" href="../index.html">Back</a>
+      <div class="bar-weight-select">
+        <label for="barWeight">Bar Weight: </label>
+        <select id="barWeight">
+          <option value="45">45 lbs</option>
+          <option value="20">20 lbs</option>
+          <option value="0">0 lbs</option>
+        </select>
+      </div>
+      <h2>Total: <span id="totalWeight">0</span> lbs</h2>
+      <p class="current-plates"></p>
+      <button class="add-plate-button" onclick="addPlate(45)">Add 45 lbs Plate</button>
+      <button class="add-plate-button" onclick="addPlate(25)">Add 25 lbs Plate</button>
+      <button class="add-plate-button" onclick="addPlate(10)">Add 10 lbs Plate</button>
+      <button class="add-plate-button" onclick="addPlate(5)">Add 5 lbs Plate</button>
+      <button class="add-plate-button" onclick="addPlate(2.5)">Add 2.5 lbs Plate</button>
+      <button class="add-plate-button" onclick="clearPlates()">Clear</button>
+    </div>
+    <hr class="divider" />
+    <p class="footer">
+      <!-- Made with <span class="emoji">🏋️‍♀️</span>  -->
+      Made by
+      <a class="footer-link" href="https://www.linkedin.com/in/jakemccambley/" target="_blank" rel="noopener">Jake</a>
+    </p>
+    <p class="emoji">🏋️</p>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
