@@ -114,11 +114,11 @@ let totalWeight = 0;
 let weights = {};
 
 function addPlate(weight) {
-  const barWeight = parseInt(document.getElementById("barWeight").value);
+  const barWeight = parseFloat(document.getElementById("barWeight").value);
   weights[weight] = weights[weight] ? weights[weight] + 1 : 1;
   const addedWeight = Object.keys(weights)
     .map((key) => {
-      return parseInt(key) * weights[key];
+      return parseFloat(key) * weights[key];
     })
     .reduce((a, b) => a + b * 2, 0);
 
@@ -134,7 +134,7 @@ function clearPlates() {
 }
 
 function initializeCalculator() {
-  const barWeight = parseInt(document.getElementById("barWeight").value);
+  const barWeight = parseFloat(document.getElementById("barWeight").value);
   totalWeight = barWeight;
   document.getElementById("totalWeight").textContent = totalWeight;
   weights = {};
@@ -143,7 +143,7 @@ function initializeCalculator() {
 
 // Update total weight when bar weight is changed
 document.getElementById("barWeight").addEventListener("change", () => {
-  totalWeight = parseInt(document.getElementById("barWeight").value);
+  totalWeight = parseFloat(document.getElementById("barWeight").value);
   weights = {};
   document.getElementById("totalWeight").textContent = totalWeight;
   updateCurrentPlates();
@@ -156,7 +156,7 @@ function updateCurrentPlates() {
     return;
   }
   currentPlates.textContent = Object.keys(weights)
-    .sort((a, b) => parseInt(b) - parseInt(a))
+    .sort((a, b) => parseFloat(b) - parseFloat(a))
     .reduce((acc, key) => {
       return acc + `${key}x${weights[key]} `;
     }, "");

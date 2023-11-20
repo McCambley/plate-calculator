@@ -4,13 +4,13 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYR4VTZCWM"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      // window.dataLayer = window.dataLayer || [];
+      // function gtag() {
+      //   dataLayer.push(arguments);
+      // }
+      // gtag("js", new Date());
 
-      gtag("config", "G-ZYR4VTZCWM");
+      // gtag("config", "G-ZYR4VTZCWM");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,7 +42,7 @@
               </div>
               <h2>Target Weight</h2>
               <div class="weight-input">
-                <input id="weight" type="number" placeholder="Insert weight" />
+                <input id="weight" type="number" placeholder="Insert weight" pattern="\d*" />
               </div>
               <!-- <button id="calculate-button">Calculate</button> -->
             </form>
@@ -54,7 +54,8 @@
           </section>
         </div>
         <div id="builder-page" class="page">
-          <h2>Total: <span id="totalWeight">0</span> lbs</h2>
+          <h2 class="total-weight"><span id="totalWeight">0</span> lbs</h2>
+          <p class="current-plates">-</p>
           <div class="bar-weight-select">
             <label for="barWeight">Bar Weight: </label>
             <select id="barWeight">
@@ -63,14 +64,13 @@
               <option value="0">0 lbs</option>
             </select>
           </div>
-          <p class="current-plates">-</p>
           <div class="add-plate-buttons">
-            <button class="add-plate-button" onclick="addPlate(45)">45 lbs</button>
-            <button class="add-plate-button" onclick="addPlate(35)">35 lbs</button>
-            <button class="add-plate-button" onclick="addPlate(25)">25 lbs</button>
-            <button class="add-plate-button" onclick="addPlate(10)">10 lbs</button>
-            <button class="add-plate-button" onclick="addPlate(5)">5 lbs</button>
-            <button class="add-plate-button" onclick="addPlate(2.5)">2.5 lbs</button>
+            <button class="add-plate-button" onclick="addPlate(45)">45</button>
+            <button class="add-plate-button" onclick="addPlate(35)">35</button>
+            <button class="add-plate-button" onclick="addPlate(25)">25</button>
+            <button class="add-plate-button" onclick="addPlate(10)">10</button>
+            <button class="add-plate-button" onclick="addPlate(5)">5</button>
+            <button class="add-plate-button" onclick="addPlate(2.5)">2.5</button>
           </div>
           <button class="add-plate-button" onclick="clearPlates()">Clear</button>
         </div>
