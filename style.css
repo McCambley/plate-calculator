@@ -233,6 +233,7 @@ h3 {
   padding: 1rem;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .add-plate-button:hover {
@@ -256,6 +257,7 @@ h3 {
   background-color: transparent;
   border: none;
   margin-left: 1rem;
+  font-size: 1rem;
 }
 
 .page-link {
