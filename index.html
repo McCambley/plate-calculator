@@ -4,13 +4,13 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYR4VTZCWM"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      // window.dataLayer = window.dataLayer || [];
+      // function gtag() {
+      //   dataLayer.push(arguments);
+      // }
+      // gtag("js", new Date());
 
-      gtag("config", "G-ZYR4VTZCWM");
+      // gtag("config", "G-ZYR4VTZCWM");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,28 +23,58 @@
   </head>
   <body>
     <div class="content">
-      <h1>Plate Calculator</h1>
-      <a class="page-link" href="./builder/">Builder</a>
-      <section class="form">
-        <form>
-          <h2>Bar Weight (lbs.)</h2>
-          <div class="weight-options">
-            <label for="weight-45"> 45<input type="radio" id="weight-45" name="options" value="45" checked /> </label>
-            <label for="weight-20"> 20<input type="radio" id="weight-20" name="options" value="20" /> </label>
-            <label for="weight-0"> 0<input type="radio" id="weight-0" name="options" value="0" /></label>
+      <h1>Plates</h1>
+      <div class="page-buttons">
+        <button id="calculator-page-button" class="page-button active">Calculator</button>
+        <button id="builder-page-button" class="page-button">Builder</button>
+      </div>
+      <div class="pages">
+        <div id="calculator-page" class="page active">
+          <section class="form">
+            <form>
+              <h2>Bar Weight</h2>
+              <div class="weight-options">
+                <label for="weight-45">
+                  45<input type="radio" id="weight-45" name="options" value="45" checked />
+                </label>
+                <label for="weight-20"> 20<input type="radio" id="weight-20" name="options" value="20" /> </label>
+                <label for="weight-0"> 0<input type="radio" id="weight-0" name="options" value="0" /></label>
+              </div>
+              <h2>Target Weight</h2>
+              <div class="weight-input">
+                <input id="weight" type="number" placeholder="Insert weight" />
+              </div>
+              <!-- <button id="calculate-button">Calculate</button> -->
+            </form>
+          </section>
+          <section class="results">
+            <h2>Plate Combinations</h2>
+            <div class="plates"></div>
+            <div class="plates-visual"></div>
+          </section>
+        </div>
+        <div id="builder-page" class="page">
+          <h2>Total: <span id="totalWeight">0</span> lbs</h2>
+          <div class="bar-weight-select">
+            <label for="barWeight">Bar Weight: </label>
+            <select id="barWeight">
+              <option value="45">45 lbs</option>
+              <option value="20">20 lbs</option>
+              <option value="0">0 lbs</option>
+            </select>
           </div>
-          <h2>Target Weight (lbs.)</h2>
-          <div class="weight-input">
-            <input id="weight" type="number" placeholder="Insert weight" />
+          <p class="current-plates">-</p>
+          <div class="add-plate-buttons">
+            <button class="add-plate-button" onclick="addPlate(45)">45 lbs</button>
+            <button class="add-plate-button" onclick="addPlate(35)">35 lbs</button>
+            <button class="add-plate-button" onclick="addPlate(25)">25 lbs</button>
+            <button class="add-plate-button" onclick="addPlate(10)">10 lbs</button>
+            <button class="add-plate-button" onclick="addPlate(5)">5 lbs</button>
+            <button class="add-plate-button" onclick="addPlate(2.5)">2.5 lbs</button>
           </div>
-          <!-- <button id="calculate-button">Calculate</button> -->
-        </form>
-      </section>
-      <section class="results">
-        <h2>Plate Combinations</h2>
-        <div class="plates"></div>
-        <div class="plates-visual"></div>
-      </section>
+          <button class="add-plate-button" onclick="clearPlates()">Clear</button>
+        </div>
+      </div>
     </div>
     <hr class="divider" />
     <p class="footer">
@@ -54,5 +84,6 @@
     </p>
     <p class="emoji">🏋️</p>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="builder/script.js"></script>
   </body>
 </html>
